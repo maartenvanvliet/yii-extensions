@@ -2,7 +2,6 @@
 /**
  * DependentSelect class file.
  *
- * @author Maarten van Vliet
  * @license BSD
  */
 
