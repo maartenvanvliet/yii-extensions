@@ -64,7 +64,7 @@ function getData(value)	{ jQuery(\"#{$id}\").empty(); jQuery.getJSON(".$url.", {
 		if($this->loadDependentOnInit)
 			$script.="var n=jQuery(\"#".$this->onChangeSelector."\").attr('value'); getData(n);";
 
-		$cs->registerScript('jQDependentSelect#'.$id,$script,$this->scriptPosition);
+		$cs->registerScript('jQChainedSelect#'.$id,$script,$this->scriptPosition);
 
 		if($this->hasModel())
 			echo CHtml::activeDropDownList($this->model,$this->attribute,$this->defaultData,$this->htmlOptions);
